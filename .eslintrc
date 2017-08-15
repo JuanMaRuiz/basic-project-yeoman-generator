@@ -1,0 +1,18 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"google"
+	],
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module"
+	},
+	"rules": {
+		"semi": 2,
+		// enable additional rules
+		"indent": ["error", 2],
+		// disable rules from base configurations
+		"no-console": "off",
+		"quotes": ["error", "double"],
+	}
+}

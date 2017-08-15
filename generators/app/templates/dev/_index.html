@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+
+  <!-- Milligram CSS minified -->
+  <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+
+  <!-- You should properly set the path from the main file. -->
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <header class="column">
+        <h1>Hooray!!! It works!!</h1>
+        <h3>Now is your time to build something impresive</h3>
+      </header> <!-- /. End of colunm -> container div for h1 -->
+    </div> <!-- /. End of row which contains h1 -->
+    <!-- This list should show the selected configuration by the user -->
+    <p>Here you have your selected configuration</p>
+    <ul>
+        <li>Application name: <%= title %> <i>This is the name setted in your <code>package.json</code></i></li>
+        <li>Dependency manager: <%= manager %></li>
+    </ul>
+  </div> <!-- /. End of main container -->
+
+  <script src="scripts/app.js"></script>
+  <script src="scripts/foo.js"></script>
+</body>
+</html>
