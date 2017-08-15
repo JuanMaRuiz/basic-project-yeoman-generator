@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/JuanMaRuiz/basic-project-yeoman-generator.svg?branch=master)](https://travis-ci.org/JuanMaRuiz/basic-project-yeoman-generator)
+
 # Yeoman generator with basic configuration #
 
 *Version*: 0.1.0
