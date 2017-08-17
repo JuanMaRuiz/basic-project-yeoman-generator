@@ -50,6 +50,7 @@ module.exports = class SimpleScaffolder extends Generator {
       {
         title: this.config.appName,
         manager: this.config.depManager,
+        packageName: this.config.packageName
       }
     );
     // Copy all hidden files in the root of the project
@@ -66,12 +67,12 @@ module.exports = class SimpleScaffolder extends Generator {
       this.templatePath("_package.json"),
       this.destinationPath("package.json"),
       {
-      	appName: this.config.appName
+      	packageName: this.config.packageName
       }
     );
     this.fs.copyTpl(
-    	this.templatePath("dev/scripts/**/*.js"),
-    	this.destinationPath("dev/scripts/**/*.js")
+    	this.templatePath("dev/scripts/app.js"),
+    	this.destinationPath("dev/scripts/app.js")
     );
 
     // Install the dependencies with the proper dependency manager

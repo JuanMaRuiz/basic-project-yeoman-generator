@@ -1,5 +1,5 @@
 {
-  "name": "<%= appName %>",
+  "name": "<%= packageName %>",
   "description": "This is your project you should write your own description",
   "scripts": {
     "test": "./node_modules/.bin/karma start",
