@@ -11,7 +11,7 @@ const DEP_MANAGER = 'sandruki';
 const eslintFilesPath = [
 	".eslintignore",
 	".eslintrc"
-]
+];
 
 function absPathAppender(relPath) {
     return path.join(tmpDir, relPath);
@@ -42,7 +42,13 @@ describe('Basic scaffolding generator', () => {
 	it('creates package.json', () => {
 		assert.file(absPathAppender('/package.json'));
 	});
+
 	it('creates .editorconfig', () => {
 		assert.file(absPathAppender('/.editorconfig'));
 	});
+
+	it('creates .gitignore', () => {
+		assert.file(absPathAppender('/.gitignore'));
+	});
+
 });
