@@ -29,7 +29,7 @@
 	"homepage": "https://bitbucket.org/juanmaruiz/app-scaffolding-yeoman#readme",
 	"dependencies": {
 		"chalk": "^2.1.0",
-		"yeoman-generator": "^1.1.1",
+		"yeoman-generator": "^2.0.1",
 		"yosay": "^2.0.1"
 	},
 	"engines": {
@@ -39,9 +39,8 @@
 	"devDependencies": {
 		"eslint": "^4.8.0",
 		"eslint-config-google": "^0.9.1",
-		"jest": "^20.0.4",
-		"jest-cli": "^20.0.4",
-		"mocha": "^3.5.3",
+		"jest": "^21.2.1",
+		"jest-cli": "^21.2.1",
 		"yeoman-assert": "^3.1.0",
 		"yeoman-test": "^1.7.0"
 	}
