@@ -1,1 +1,2 @@
 app/templates/**
+__tests__

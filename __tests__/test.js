@@ -9,15 +9,20 @@ const PACKAGE_NAME = 'sandruki';
 const DEP_MANAGER = 'sandruki';
 
 const eslintFilesPath = [
-	".eslintignore",
-	".eslintrc"
+	'.eslintignore',
+	'.eslintrc'
+];
+
+const hiddenFiles = [
+  '.editorconfig',
+  '.gitignore'
 ];
 
 function absPathAppender(relPath) {
     return path.join(tmpDir, relPath);
 }
 
-describe('Basic scaffolding generator', () => {
+describe('All lint files are created', () => {
 	beforeEach(function () {
 	  // The object returned acts like a promise, so return it to wait until the process is done
 	  return helpers.run(path.join(__dirname, '../generators/app'))
@@ -31,24 +36,29 @@ describe('Basic scaffolding generator', () => {
    	 	})
 	});
 
-	it('creates all eslint files', () => {
-		assert.file(eslintFilesPath.map(absPathAppender));
-	});
+  eslintFilesPath.map(function(file) {
+    it('creates --> ' + file, () => {
+      assert.file(absPathAppender('/' + file));
+    });
+  });
+});
 
-	it('creates Gruntfile', () => {
-		assert.file(absPathAppender('/Gruntfile.js'));
-	});
+describe('All configuration files are generated', () => {
+  it('creates Gruntfile', () => {
+    assert.file(absPathAppender('/Gruntfile.js'));
+  });
 
-	it('creates package.json', () => {
-		assert.file(absPathAppender('/package.json'));
-	});
+  it('creates package.json', () => {
+    assert.file(absPathAppender('/package.json'));
+  });
+});
 
-	it('creates .editorconfig', () => {
-		assert.file(absPathAppender('/.editorconfig'));
-	});
+describe('All hidden files are generated', () => {
 
-	it('creates .gitignore', () => {
-		assert.file(absPathAppender('/.gitignore'));
-	});
+  hiddenFiles.map(function(file) {
+    it('creates --> ' + file, () => {
+      assert.file(absPathAppender('/' + file));
+    });
+  });
 
 });

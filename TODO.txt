@@ -1,3 +1,2 @@
-* Add grunt watch as dependency and task to Gruntfile and package.json
-* Fix lint errors
+
 
