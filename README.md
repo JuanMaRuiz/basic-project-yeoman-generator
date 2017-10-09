@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/JuanMaRuiz/basic-project-yeoman-generator.svg?branch=master)](https://travis-ci.org/JuanMaRuiz/basic-project-yeoman-generator)
-[![Dependencies Status](https://david-dm.org/JuanMaRuiz/basic-project-yeoman-generator.svg)](https://david-dm.org/)
+[![dependencies Status](https://david-dm.org/JuanMaRuiz/basic-project-yeoman-generator/status.svg)](https://david-dm.org/JuanMaRuiz/basic-project-yeoman-generator)
+[![devDependencies Status](https://david-dm.org/JuanMaRuiz/basic-project-yeoman-generator/dev-status.svg)](https://david-dm.org/JuanMaRuiz/basic-project-yeoman-generator?type=dev)
 
 # Yeoman generator with basic configuration #
 
