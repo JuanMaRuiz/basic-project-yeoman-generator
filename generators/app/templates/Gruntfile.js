@@ -23,6 +23,7 @@ module.exports = function(grunt) {
       options: {
         // format: 'node_modules/eslint-tap',
         configFile: '.eslintrc',
+        fix: true
       },
       target: ['dev/**/*.js'],
     },
